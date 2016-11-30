@@ -1,0 +1,31 @@
+{
+  "name": "galaxy-training-rebuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawnebeyer/galaxy-training.git"
+  },
+  "author": "Shawn Ebeyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shawnebeyer/galaxy-training/issues"
+  },
+  "homepage": "https://github.com/shawnebeyer/galaxy-training#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}

@@ -408,4 +408,5 @@ template {
 [hidden] {
   display: none; }
 
-/*# sourceMappingURL=style.css.map */
+.someClass {
+  background-color: red; }
