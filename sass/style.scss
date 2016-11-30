@@ -1,7 +1,9 @@
 @import "../bourbon/bourbon";
 @import "../neat/neat";
-@import "_normalize.scss";
+@import "normalize";
+@import "base";
+@import "navigation";
+@import "typography";
+@import "gallery";
 
-.someClass{
-	background-color: red;
-}
+
