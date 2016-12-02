@@ -1,0 +1,200 @@
+/* GALAXY TRAINING - MAIN.CSS
+   ============================================================================
+
+   Use this CSS file to place all common CSS styles that will
+   impact the overall style rule set across the site. The 
+   main.css file should dictacte style guides for elements 
+   such as:
+
+   > buttons/CTAs
+   > form-inputs
+   > links
+   > hover effect library
+   > animation library 
+   > heading styles
+   > <html> and <body> baseline styles
+*/
+
+/* CSS will use a BEM naming convention structure. */
+
+
+
+/*# Baseline Styles #*/
+/* -------------------------------------------------------------------------- */
+
+*, *:before, *:after {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+body,
+html{
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body, ul, ol {
+  margin: 0;
+  padding: 0; 
+}
+b, strong{
+  font-size: 110%;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+body {
+  background-color: rgba(255,255,255,1);
+  font-family: $font-stack;
+  color: rgba(0, 0, 0, 1); 
+  font-size: $font-size;
+}
+a, a:hover, a:visited, a:focus{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*# Baseline Layout Styles #*/
+/* -------------------------------------------------------------------------- */
+
+.content-width{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.center-content{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*# Text Moddifiers #*/
+/* -------------------------------------------------------------------------- */
+
+.text-bold{font-weight: 700}
+.text-light{font-weight: 100}
+.text-regular{font-weight: 400}
+
+[class*="text--s"] {font-size: 80%;}
+[class*="text--xs"] {font-size: 60%;}
+[class*="text--l"] {font-size: 120%;}
+
+/*# Headings & Titles #*/
+/* -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6, [class*="title--"] {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+[class*="title--"]{
+  display: block;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
+}
+[class*="title--xs"] {font-size: 100%;}
+[class*="title--s"]  {font-size: 120%;}
+[class*="title--m"]  {font-size: 140%;}
+[class*="title--l"]  {font-size: 200%;}
+[class*="title--xl"] {font-size: 300%;}
+[class*="title--xxl"]{
+  font-size: 500%;
+  font-weight: 900;
+}
+[class*="title--xxxl"]{font-size: 1300%}
+[class*="title--sup"]{
+  font-size : 18px;
+  margin: 10px 0px 17px 0;
+  font-weight: 400;
+}
+@media only screen and (max-width: 880px) {
+  [class*="title--sup"]{
+    font-size : 15px;
+   }
+}
+
+/*# Separators & Spacers #*/
+/* -------------------------------------------------------------------------- */
+
+[class*="separator--"],
+[class*="spacer--"]{
+  display: block;
+}
+.separator--s{
+  width: 100%;
+  height: 40px;
+}
+.separator--m{
+  width: 100%;
+  height: 80px;
+}
+.spacer--m{
+  margin : 40px 0 40px 0;
+}
+.spacer--s{
+  margin: 20px 0 20px 0;
+}
+.spacer--xs{
+  margin: 10px 0 10px 0;
+}
+.no-margin{
+  margin: 0;
+}
+.text-center{
+  text-align: center;
+}
+
+/*# Text & Background Color #*/
+/* -------------------------------------------------------------------------- */
+
+[class*="color--default"]{color : $base-black}
+[class*="bg--default"]{background-color : $base-black}
+
+[class*="color--contrast"]{color : $base-white}
+[class*="bg--contrast"]{background-color : $base-white}
+
+[class*="color--brand"]{color : rgba(235,66,27,1)}
+[class*="bg--brand"]{background-color : rgba(235,66,27,1)}
+
+[class*="color--highlight"]{color : rgba(0,170,173,1)}
+[class*="bg--highlight"]{background-color : rgba(0,170,173,1)}
+
+[class*="color--shaded"]{color : rgba(124,124,124,1)}
+[class*="bg--shaded"]{background-color : rgba(124,124,124,1)}
+
+[class*="color--shaded-light"]{color : rgba(220,220,220,1)}
+[class*="bg--shaded-light"]{background-color : rgba(220,220,220,1)}
+
+[class*="bg--shaded-lighter"]{background-color : rgba(240,240,240,1)}
+
+[class*="color--error"]{color : rgba(255,0,0,1)}
+
+/*# Base section styles #*/
+/* -------------------------------------------------------------------------- */
+
+.section{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+}
+.hero-title{
+  line-height: 0.7;
+  padding-bottom: 50px;
+}
+.hero-subtitle{
+  font-weight: 500;
+  color: goldenrod;
+  font-size: 36%;
+  letter-spacing: 5px;
+
+}
